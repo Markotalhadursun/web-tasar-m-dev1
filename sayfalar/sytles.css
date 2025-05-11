@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #fffaf0;
+  }
+  h1, h2, h3 {
+    background-color: bisque;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  p {
+    text-align: justify;
+    margin-bottom: 10px;
+  }
+  ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  .konteyjan-tablosu {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+  }

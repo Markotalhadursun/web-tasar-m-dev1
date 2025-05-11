@@ -1,13 +1,39 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <title>Onay Sayfası</title>
 </head>
 <body>
 
-  <h2>İletişim Bilgileriniz Kaydedildi</h2>
-  <p>Bilgileriniz başarıyla alındı. En kısa sürede sizinle iletişime geçeceğiz. Teşekkür ederiz!</p>
+  
+
+  <script> 
+    var veriler = new URLSearchParams(window.location.search);
+    var ad = veriler.get('ad');
+    var soyad = veriler.get('soyad' );
+    var email = veriler.get('email');
+
+    document.write("<h3>Bilgileriniz başarıyla alındı. En kısa sürede sizinle iletişime geçeceğiz. Teşekkür ederiz!</h3>");
+
+  document.write(`
+    <table border="1" cellpadding="10" cellspacing="0" style="border-collapse: collapse; font-family: Arial; margin-top: 10px;">
+      <tr>
+        <th>Ad</th>
+        <th>Soyad</th>
+        <th>Email</th>
+      </tr>
+      <tr>
+        <td>${ad}</td>
+        <td>${soyad}</td>
+        <td>${email}</td>
+      </tr>
+    </table>
+  `);
+</script>
+  </script>
+
 
 </body>
 </html>
